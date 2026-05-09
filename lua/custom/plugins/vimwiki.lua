@@ -1,7 +1,2 @@
-return {
-  'vimwiki/vimwiki',
-  init = function()
-    -- ignore markdown files
-    vim.cmd 'let g:vimwiki_global_ext = 0'
-  end,
-}
+vim.g.vimwiki_global_ext = 0
+vim.pack.add { 'https://github.com/vimwiki/vimwiki' }
